@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: links
+  annotations:
+    kubernetes.io/ingress.class: "public"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+  labels:
+    name: links
+spec:
+  tls:
+  - hosts:
+    - joaorodriguesjr.com
+    secretName: links-tls
+  rules:
+  - host: joaorodriguesjr.com
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: links
+            port:
+              number: 80

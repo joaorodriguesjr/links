@@ -17,8 +17,6 @@ spec:
       labels:
         app: links
     spec:
-      imagePullSecrets:
-      - name: links-registry
       containers:
       - name: links
         image: CONTAINER_IMAGE

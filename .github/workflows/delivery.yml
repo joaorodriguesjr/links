@@ -26,17 +26,6 @@ jobs:
         tags: ghcr.io/joaorodriguesjr/links:${{ github.sha }}
         push: true
 
-    - name: Before Secret
-      run: |
-        microk8s.kubectl delete secret links-registry --ignore-not-found
-
-    - name: Secret
-      run: |
-        microk8s.kubectl create secret docker-registry links-registry \
-        --docker-server=ghcr.io \
-        --docker-username=joaorodriguesjr \
-        --docker-password=${{ secrets.GITHUB_TOKEN }} \
-
     - name: Apply
       run: |
         sed 's#CONTAINER_IMAGE#ghcr.io/joaorodriguesjr/links:${{ github.sha }}#' kubernetes/deployment.yml | microk8s.kubectl apply -f -

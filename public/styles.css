@@ -1,0 +1,93 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #454545;
+}
+
+html, body, .container {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 16px 0;
+}
+
+header img {
+  border-radius: 50%;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+main {
+  flex: 1;
+}
+
+main ul {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+}
+
+main li {
+  margin: 8px 0;
+  line-height: 24px;
+  border-radius: 2px;
+  background-color: #454545;
+  color: #f5f5f5;
+}
+
+main svg {
+  position: absolute;
+  left: 16px;
+  width: 24px;
+  fill: #f5f5f5;
+  margin: 0 16px 0 0;
+}
+
+main a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 16px 0px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: inherit;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+  text-align: center;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer svg {
+  width: 16px;
+  fill: #454545;
+  margin-left: 4px;
+}

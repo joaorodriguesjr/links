@@ -1,0 +1,14 @@
+version: "3.3"
+
+services:
+  server:
+    image: nginx:alpine
+    volumes:
+      - ../public:/usr/share/nginx/html
+    networks:
+      - links
+    ports:
+      - 8001:80
+
+networks:
+  links:

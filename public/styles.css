@@ -2,7 +2,7 @@
 
 body {
   text-align: center;
-  color: #454545;
+  color: #353535;
 }
 
 html, body, .container {
@@ -24,7 +24,7 @@ html, body, .container {
 }
 
 header {
-  padding: 16px 0;
+  padding: 16px 0 0 0;
 }
 
 header img {
@@ -34,16 +34,25 @@ header img {
 
 header h1 {
   font-size: 1.5rem;
+  letter-spacing: 0.075rem;
+  font-weight: lighter;
+  padding-bottom: 8px;
 }
 
 header p {
   padding: 0 8px;
   font-size: 0.95rem;
-  font-family: 'Roboto', sans-serif;
 }
 
 main {
   flex: 1;
+}
+
+main h2 {
+  margin-top: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-weight: lighter;
 }
 
 main ul {

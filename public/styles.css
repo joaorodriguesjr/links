@@ -4,6 +4,8 @@
   --color-background: #FFFFFF;
 
   --color-foreground-lighten: #959595;
+
+  --gradient: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #feb47b, #ffd38e);
 }
 
 html, body, .container {
@@ -40,11 +42,10 @@ header {
 .picture {
   position: relative;
   padding: 2px;
-  background: rgb(175,0,255,1);
-  background: linear-gradient(225deg, rgba(175,0,255,1) 0%, rgba(254,199,0,1) 100%);
-  width: 132px;
-  height: 132px;
+  width: 133px;
+  height: 133px;
   border-radius: 50%;
+  background: var(--gradient);
 }
 
 header img {

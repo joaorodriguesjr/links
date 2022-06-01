@@ -39,6 +39,24 @@ header {
   align-items: center;
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes inverted {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
 .picture {
   position: relative;
   padding: 2px;
@@ -46,12 +64,14 @@ header {
   height: 133px;
   border-radius: 50%;
   background: var(--gradient);
+  animation: rotate linear 3.5s infinite;
 }
 
 header img {
   border-radius: 50%;
   padding: 4px;
   background: var(--color-background);
+  animation: inverted linear 3.5s infinite;
 }
 
 header h1 {

@@ -1,0 +1,249 @@
+:root {
+  --font-family: 'Nunito Sans', sans-serif;
+  --color-foreground: #454545;
+  --color-background: #FFFFFF;
+
+  --color-foreground-lighten: #959595;
+
+  --gradient: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #feb47b, #ffd38e);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.header, .social, .projects, .footer {
+  width: 100%;
+  padding: 16px;
+}
+
+.projects {
+  flex-grow: 1;
+}
+
+.source-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.header h1 {
+  margin: 16px 0 24px 0;
+}
+
+.header p {
+  margin: 16px 0;
+}
+
+.header img {
+  border-radius: 50%;
+}
+
+.social h2 {
+  margin: 16px 0 32px 0;
+}
+
+.social ul {
+  max-width: 300px;
+  margin: 16px auto;
+
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.social svg {
+  width: 32px;
+  height: 32px;
+}
+
+.projects h2 {
+  margin: 16px 0;
+}
+
+.projects article {
+  margin: 16px 0;
+  padding: 16px 0;
+}
+
+.project h3 {
+  margin: 16px 0;
+}
+
+.project p {
+  margin: 16px 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 8px 0;
+}
+
+.tags span {
+  margin: 4px;
+  padding: 2px 8px;
+  border-radius: 8px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.links a {
+  margin: 0 8px;
+}
+
+.footer svg {
+  width: 16px;
+  height: 16px;
+
+  margin: 0 4px;
+}
+
+.footer a {
+  margin: 0 4px;
+}
+
+.container {
+  text-align: center;
+}
+
+* {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.0rem;
+}
+
+.header h1 {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 0.20rem;
+}
+
+.header p {
+  font-size: 0.95rem;
+}
+
+.social h2 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+.projects h2 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+.project h3 {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+.project p {
+  font-size: 0.95rem;
+}
+
+.footer small, footer a {
+  font-size: 0.75rem;
+}
+
+.tags span {
+  font-size: 0.75rem;
+}
+
+.links a {
+  font-size: 0.85rem;
+  text-decoration: underline;
+}
+
+.picture {
+  margin: auto;
+  padding: 2px;
+  width: 133px;
+  height: 133px;
+  border-radius: 50%;
+  background: var(--gradient);
+  animation: rotate linear 3.5s infinite;
+}
+
+header img {
+  border-radius: 50%;
+  padding: 4px;
+  background: var(--color-background);
+  animation: rotate linear 3.5s infinite reverse;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+p {
+  color: #454545;
+}
+
+.header h1 {
+  color: #656565;
+}
+
+.social svg {
+  fill: #555555;
+}
+
+.social, .footer {
+  background-color: #F5F5F5;
+}
+
+.project h3 {
+  color: #555555;
+}
+
+.tags span {
+  background-color: #f9f9f9;
+  color: #757575;
+}
+
+.links a {
+  color: #757575;
+}
+
+.links a:active, .links a:focus, .links a:hover {
+  color: #454545;
+}
+
+.footer svg {
+  fill: #505050;
+}

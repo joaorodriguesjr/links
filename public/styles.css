@@ -172,7 +172,7 @@ body {
   font-size: 0.95rem;
 }
 
-.footer small, footer a {
+.footer * {
   font-size: 0.75rem;
 }
 

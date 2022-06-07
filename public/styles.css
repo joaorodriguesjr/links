@@ -244,6 +244,14 @@ p {
   color: #454545;
 }
 
+.footer a {
+  color: #454545;
+}
+
+.footer a:active, .footer a:focus, .footer a:hover {
+  color: #353535;
+}
+
 .footer svg {
   fill: #505050;
 }
